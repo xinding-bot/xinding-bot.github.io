@@ -46,6 +46,31 @@
             </tr>
           </tbody></table>
 
+          <!-- News & Highlights -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>🔥 News & Highlights</h2>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:8px 16px;width:100%;vertical-align:middle">
+                <div style="background-color:#fff3cd;border-left:4px solid #ff6b6b;padding:16px;margin-bottom:8px;border-radius:4px;">
+                  <p style="margin:0 0 8px 0;"><strong style="color:#d63031;font-size:1.1em;">🏆 Zetta (ζ): Closed-Loop Physical Intelligence with Online Learning</strong></p>
+                  <p style="margin:0 0 8px 0;">Our latest work on embodied AI achieves groundbreaking "Aha Moment" for robots through closed-loop online learning!</p>
+                  <p style="margin:0;">
+                    📰 <strong>Featured on <a href="https://mp.weixin.qq.com/s/dgrptmhUPzZwcubdwUAqFw" style="color:#d63031;">机器之心</a> front page</strong> |
+                    🤗 <strong>#1 on <a href="https://huggingface.co/papers" style="color:#d63031;">Hugging Face Daily Papers</a></strong> |
+                    📄 <a href="https://arxiv.org/abs/2608.16590">arXiv</a>
+                  </p>
+                </div>
+              </td>
+            </tr>
+          </tbody></table>
+
           <!-- Demo Videos -->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
@@ -56,6 +81,21 @@
           </tbody></table>
 
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+<!-- Demo: Zetta -->
+<tr>
+  <td style="padding:8px 16px;width:100%;vertical-align:top">
+    <p style="margin:0 0 8px 0;"><strong style="color:#d63031;font-size:1.05em;">🔥 Zetta (ζ)</strong> — Closed-loop physical intelligence with online learning</p>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:flex-start;">
+      <video style="height:160px;width:auto;" controls muted loop>
+        <source src="demos/Zetta_demo.mp4" type="video/mp4">
+      </video>
+      <video style="height:160px;width:auto;" controls muted loop>
+        <source src="demos/Zetta_Demo_2.mp4" type="video/mp4">
+      </video>
+    </div>
+  </td>
+</tr>
 
 <!-- Demo: StreamMind -->
 <tr>
@@ -126,6 +166,47 @@
 <tr>
   <td colspan="2" style="padding:16px 0 4px 16px;">
     <h3 style="margin:0;font-size:16px;font-weight:600;color:#333;border-bottom:1px solid #ddd;padding-bottom:6px;">Embodied Agents</h3>
+  </td>
+</tr>
+
+<!-- Zetta -->
+<tr onmouseout="zetta_stop()" onmouseover="zetta_start()" style="background-color:#fff9f0;">
+  <td style="padding:16px;width:35%;vertical-align:middle">
+    <div class="one" style="width:100%;height:auto;">
+      <div class="two" id="zetta_image" style="width:100%;height:auto;">
+        <video style="width:100%;display:block;" muted loop>
+          <source src="demos/Zetta_demo.mp4" type="video/mp4">
+        </video>
+      </div>
+      <video style="width:100%;display:block;" muted loop>
+        <source src="demos/Zetta_Demo_2.mp4" type="video/mp4">
+      </video>
+    </div>
+    <script type="text/javascript">
+      function zetta_start() {
+        document.getElementById('zetta_image').style.opacity = "1";
+        document.getElementById('zetta_image').getElementsByTagName('video')[0].play();
+      }
+      function zetta_stop() {
+        document.getElementById('zetta_image').style.opacity = "0";
+        document.getElementById('zetta_image').getElementsByTagName('video')[0].pause();
+      }
+      zetta_stop();
+    </script>
+  </td>
+  <td style="padding:8px;width:65%;vertical-align:middle">
+    <a href="https://arxiv.org/abs/2608.16590">
+      <span class="papertitle" style="color:#d63031;">🔥 Zetta (ζ): Closed-Loop Physical Intelligence with Online Learning</span>
+    </a>
+    <br>
+    <strong>Xin Ding</strong>, Liang Mi, Mingzhe Huang, Zixuan Wang, Chao Zhang, Zixu Hao, Fu Chen, Xiangyu Li, Yikai Zheng, Yaoyu Guo, Weijun Wang, Kun Li, Hao Wu, Yunxin Liu, Ting Cao
+    <br>
+    <em>Preprint</em>, 2026 &nbsp;<font color="#cc0000"><strong>(NEW! First Author & Tech Lead, Featured on 机器之心 & HuggingFace Daily Papers #1)</strong></font>
+    <br>
+    <a href="https://arxiv.org/abs/2608.16590">arXiv</a> /
+    <a href="https://mp.weixin.qq.com/s/dgrptmhUPzZwcubdwUAqFw">机器之心 News</a> /
+    <a href="https://huggingface.co/papers">🤗 HuggingFace</a>
+    <p>A breakthrough in embodied AI that enables robots to experience "Aha Moment" through closed-loop online learning. Zetta achieves self-evolving physical intelligence by continuously learning from interaction with the environment, demonstrating unprecedented adaptability and problem-solving capabilities in real-world robotic tasks.</p>
   </td>
 </tr>
 
