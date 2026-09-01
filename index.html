@@ -32,8 +32,7 @@
                   I have received the <strong>National Scholarship</strong> (Top 1%), the Huawei 2012 Star, and the Microsoft Star of Tomorrow.
                 </p>
                 <p style="text-align:center">
-                  <a href="mailto:xinding64@mail.ustc.edu.cn">Email</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/">Github</a>
+                  <a href="mailto:xinding64@mail.ustc.edu.cn">Email</a>
                 </p>
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
@@ -65,6 +64,14 @@
                     📄 <a href="https://arxiv.org/abs/2608.16590">arXiv</a>
                   </p>
                 </div>
+                <div style="background-color:#e8f5e9;border-left:4px solid #4caf50;padding:16px;margin-bottom:8px;border-radius:4px;">
+                  <p style="margin:0 0 8px 0;"><strong style="color:#2e7d32;font-size:1.1em;">🏆 Zeva: In-Context Causal Learning for Generalizable Embodied Manipulation</strong></p>
+                  <p style="margin:0 0 8px 0;">An In-Context Causal Learning WAM that learns how its actions affect the environment from human demonstrations or self-exploration—without training!</p>
+                  <p style="margin:0;">
+                    📰 <strong>Featured on <a href="https://mp.weixin.qq.com/s/OMrRnOtlDyjFXlZDPF-n4Q" style="color:#2e7d32;">量子位</a></strong> |
+                    📄 <a href="https://arxiv.org/abs/2608.30880">arXiv</a>
+                  </p>
+                </div>
               </td>
             </tr>
           </tbody></table>
@@ -90,6 +97,24 @@
       </video>
       <video style="height:160px;width:auto;" controls muted loop>
         <source src="demos/Zetta_Demo_2.mp4" type="video/mp4">
+      </video>
+    </div>
+  </td>
+</tr>
+
+<!-- Demo: Zeva -->
+<tr>
+  <td style="padding:8px 16px;width:100%;vertical-align:top">
+    <p style="margin:0 0 8px 0;"><strong style="color:#2e7d32;font-size:1.05em;">🔥 Zeva</strong> — In-context causal learning for generalizable embodied manipulation</p>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:flex-start;">
+      <video style="height:160px;width:auto;" controls muted loop>
+        <source src="demos/zeva_demo1.mp4" type="video/mp4">
+      </video>
+      <video style="height:160px;width:auto;" controls muted loop>
+        <source src="demos/zeva_demo2.mp4" type="video/mp4">
+      </video>
+      <video style="height:160px;width:auto;" controls muted loop>
+        <source src="demos/zeva_demo3.mp4" type="video/mp4">
       </video>
     </div>
   </td>
@@ -205,6 +230,47 @@
     <a href="https://mp.weixin.qq.com/s/dgrptmhUPzZwcubdwUAqFw">机器之心 News</a> /
     <a href="https://huggingface.co/papers">🤗 HuggingFace</a>
     <p>A breakthrough in embodied AI that enables robots to experience "Aha Moment" through closed-loop online learning. Zetta achieves self-evolving physical intelligence by continuously learning from interaction with the environment, demonstrating unprecedented adaptability and problem-solving capabilities in real-world robotic tasks.</p>
+  </td>
+</tr>
+
+<!-- Zeva -->
+<tr onmouseout="zeva_stop()" onmouseover="zeva_start()" style="background-color:#f1f8e9;">
+  <td style="padding:16px;width:35%;vertical-align:middle">
+    <div class="one" style="width:100%;height:auto;">
+      <div class="two" id="zeva_image" style="width:100%;height:auto;">
+        <video style="width:100%;display:block;" muted loop>
+          <source src="demos/zeva_demo1.mp4" type="video/mp4">
+        </video>
+      </div>
+      <video style="width:100%;display:block;" muted loop>
+        <source src="demos/zeva_demo2.mp4" type="video/mp4">
+      </video>
+    </div>
+    <script type="text/javascript">
+      function zeva_start() {
+        document.getElementById('zeva_image').style.opacity = "1";
+        document.getElementById('zeva_image').getElementsByTagName('video')[0].play();
+      }
+      function zeva_stop() {
+        document.getElementById('zeva_image').style.opacity = "0";
+        document.getElementById('zeva_image').getElementsByTagName('video')[0].pause();
+      }
+      zeva_stop();
+    </script>
+  </td>
+  <td style="padding:8px;width:65%;vertical-align:middle">
+    <a href="https://arxiv.org/abs/2608.30880">
+      <span class="papertitle" style="color:#2e7d32;">🔥 Zeva: In-Context Causal Learning for Generalizable Embodied Manipulation</span>
+    </a>
+    <br>
+    Fu Chen*, <strong>Xin Ding*</strong>, Bingjia Huang, Xiangyu Li, Mingju Wang, Jiawei He, Kun Li, Wei Sun, Yunxin Liu, Hao Wu<sup>†,‡</sup>, Ting Cao<sup>†,§</sup>
+    <br>
+    <em>Preprint</em>, 2026 &nbsp;<font color="#009900"><strong>(NEW! Co-First Author & Tech Lead, Featured on 量子位)</strong></font>
+    <br>
+    <a href="https://arxiv.org/abs/2608.30880">arXiv</a> /
+    <a href="https://mp.weixin.qq.com/s/OMrRnOtlDyjFXlZDPF-n4Q">量子位 News</a> /
+    <a href="https://air-embodied-brain.github.io/Zeva">Project Page</a>
+    <p>An In-Context Causal Learning World-Action Model (WAM) that enables robots to learn the causal impact of their actions on the environment from past interactions and apply this knowledge to future tasks. Zeva learns how to complete tasks from human demonstrations or self-exploration without training, extracting causality between actions and state changes on-the-fly during execution. Achieves 83.3% success on real-world manipulation and demonstrates strong success-rate scaling from 57% to 90% across self-evolution iterations, with robust cross-task generalization.</p>
   </td>
 </tr>
 
